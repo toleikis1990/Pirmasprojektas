@@ -53,4 +53,50 @@ public class AsertionExamples {
         // then
         Assertions.assertEquals(0.043478260869565216, result);
     }
+    @Test
+    public void testAssertTrueFalse(){
+        //given
+        int firstNUm = 5;
+        int secondNum = 15;
+        // when
+        boolean condition = firstNUm == secondNum;
+        // then
+        Assertions.assertTrue(firstNUm!= secondNum);
+        Assertions.assertFalse(condition);
+    }
+    @Test
+    public void testAssertNulOrNotNull(){
+        String emptyText = null;
+        String text = "sekamdienis";
+
+
+        Assertions.assertNull(emptyText);
+        Assertions.assertNotNull(text);
+
+    }
+    @Test
+    public void testArrayEquals(){
+        // given
+        int [] firstArr = {1, 2, 3};
+        int [] secondArr = {1, 2, 3};
+
+        // when
+
+        // then
+        Assertions.assertArrayEquals(firstArr, secondArr);
+    }
+
+    @Test
+    public void testSameOrNotSame(){
+        // given
+        String text1 = "abc";
+        String text2 = "abc";
+        String text3 = new String("abc");
+
+        // when
+
+        // then
+        Assertions.assertSame(text1, text2);
+        Assertions.assertNotSame(text2, text3);
+    }
 }

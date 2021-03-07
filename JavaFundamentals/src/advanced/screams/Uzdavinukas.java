@@ -5,7 +5,7 @@ package advanced.screams;
 //    sujunkite į vieną žodį su `reduce`;
 //    * Naudodami pradinį žodžių sąrašą, sujunkite į vientisą tekstą, kiekvieną žodį atskyrę ženklu `,`
 //    (tekstas negali prasidėti ar baigtis nurodytu ženklu);
-//      *Atfiltruoti zodziai kurie ilgesni, nei 5 simbolio ilgio;
+//      * Atfiltruoti zodziai kurie ilgesni, nei 5 simbolio ilgio;
 //    * Naudodami pradinį žodžių sąrašą, išspausdinkite tuos, kurie turi raidę `o`.
 //    [Rytas, Lova, Durys, Automobilis, Katinas]
 

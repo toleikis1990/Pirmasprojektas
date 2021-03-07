@@ -5,9 +5,9 @@ public class Bed {
     private String name;
     private String bedroomType;
 
-    public Bed(String name, String beroomType){
+    public Bed(String name, String bedroomType){
         this.name = name;
-        this.bedroomType = beroomType;
+        this.bedroomType = bedroomType;
     }
 
 }

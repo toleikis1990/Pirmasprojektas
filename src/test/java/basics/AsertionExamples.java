@@ -1,8 +1,16 @@
 package basics;
 
 import fundamentals_testing.Calculator;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNotSame;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class AsertionExamples {
 
@@ -15,7 +23,7 @@ public class AsertionExamples {
         int result = calculator.add(5, 115);
 
         // then
-        Assertions.assertEquals(120, result);
+        assertEquals(120, result);
     }
 
     @Test
@@ -27,7 +35,7 @@ public class AsertionExamples {
         int result = calculator.subtract(5, 115);
 
         // then
-        Assertions.assertEquals(-110, result);
+        assertEquals(-110, result);
     }
 
     @Test
@@ -39,7 +47,7 @@ public class AsertionExamples {
         int result = calculator.daugyba(5, 115);
 
         // then
-        Assertions.assertEquals(575, result);
+        assertEquals(575, result);
     }
 
     @Test
@@ -51,7 +59,7 @@ public class AsertionExamples {
         double result = calculator.dalyba(5, 115);
 
         // then
-        Assertions.assertEquals(0.043478260869565216, result);
+        assertEquals(0.043478260869565216, result);
     }
     @Test
     public void testAssertTrueFalse(){
@@ -61,8 +69,8 @@ public class AsertionExamples {
         // when
         boolean condition = firstNUm == secondNum;
         // then
-        Assertions.assertTrue(firstNUm!= secondNum);
-        Assertions.assertFalse(condition);
+        assertTrue(firstNUm!= secondNum);
+        assertFalse(condition);
     }
     @Test
     public void testAssertNulOrNotNull(){
@@ -70,8 +78,8 @@ public class AsertionExamples {
         String text = "sekamdienis";
 
 
-        Assertions.assertNull(emptyText);
-        Assertions.assertNotNull(text);
+        assertNull(emptyText);
+        assertNotNull(text);
 
     }
     @Test
@@ -83,7 +91,7 @@ public class AsertionExamples {
         // when
 
         // then
-        Assertions.assertArrayEquals(firstArr, secondArr);
+        assertArrayEquals(firstArr, secondArr);
     }
 
     @Test
@@ -96,7 +104,7 @@ public class AsertionExamples {
         // when
 
         // then
-        Assertions.assertSame(text1, text2);
-        Assertions.assertNotSame(text2, text3);
+        assertSame(text1, text2);
+        assertNotSame(text2, text3);
     }
 }
